@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Keliling Bangun Datar</title>
+    <link rel="stylesheet" type="text/css" href="uasfais.css">
+</head>
+<body background="bc fisika.jpg">
+    <h1>Luas Keliling Bangun Datar</h1>
+
+    <div class="menu">
+        <button class="menu-button" onclick="showRectangle()">Persegi Panjang</button>
+        <button class="menu-button" onclick="showSquare()">Bujur Sangkar</button>
+        <button class="menu-button" onclick="showCircle()">Lingkaran</button>
+    </div>
+
+    
+    <div class="calculator" id="rectangle">
+        <h2>Persegi Panjang</h2>
+        Panjang: <input type="number" id="lengthRectangle"><br>
+        Lebar: <input type="number" id="widthRectangle"><br>
+        <button onclick="calculateRectangle()">Hitung</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <p>Luas: <span id="rectangleArea"></span></p>
+        <p>Keliling: <span id="rectanglePerimeter"></span></p>
+    </div>
+
+    <div class="calculator" id="square">
+        <h2>Bujur Sangkar</h2>
+        Sisi: <input type="number" id="sideSquare"><br>
+        <button onclick="calculateSquare()">Hitung</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <p>Luas: <span id="squareArea"></span></p>
+        <p>Keliling: <span id="squarePerimeter"></span></p>
+    </div>
+
+    <div class="calculator" id="circle">
+        <h2>Lingkaran</h2>
+        Jari-jari: <input type="number" id="radiusCircle"><br>
+        <button onclick="calculateCircle()">Hitung</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <p>Luas: <span id="circleArea"></span></p>
+        <p>Keliling: <span id="circlePerimeter"></span></p>
+    </div>
+
+    <script src="uasfais.js"></script>
+</body>
+</html>
+
